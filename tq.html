@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تقسيط بلس | قسّط بدون دفعة أولى وبدون كفيل</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="tq.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="logo">تقسيط<span>+</span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#features">المميزات</a></li>
+    <li><a href="#steps">كيف يعمل</a></li>
+    <li><a href="#products">المنتجات</a></li>
+  </ul>
+  <button class="nav-cta">
+    قدّم طلبك
+  </button>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge">التقسيط الذكي في فلسطين والعالم العربي</div>
+      <h1>
+        اللي بخاطرك اليوم<br>
+        <span class="highlight">خذه الحين</span><br>
+        وادفع <span class="highlight-green">بعدين!</span>
+      </h1>
+      <p>قسّط جوالك، لابتوبك، وكل اللي تحتاجه — بدون دفعة أولى، وبدون كفيل. أقساط مريحة على 36 شهر.</p>
+      <div class="hero-btns">
+        <a href="#form" class="btn-primary">🚀 قدّم طلبك الآن</a>
+        <a href="https://wa.me/970500000000" target="_blank" class="btn-whatsapp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.108.549 4.088 1.51 5.808L0 24l6.335-1.648A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.6a9.6 9.6 0 01-4.889-1.337l-.351-.209-3.624.942.974-3.532-.228-.363A9.567 9.567 0 012.4 12c0-5.292 4.308-9.6 9.6-9.6 5.292 0 9.6 4.308 9.6 9.6 0 5.292-4.308 9.6-9.6 9.6z"/></svg>
+          تواصل واتساب
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">+5K</span>
+          <span class="stat-label">عميل راضٍ</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">36</span>
+          <span class="stat-label">شهر تقسيط</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label">دفعة أولى</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="mockup-card">
+        <div class="card-header">
+          <span class="card-title">طلب التقسيط</span>
+          <span class="badge-green">✓ موافق عليه</span>
+        </div>
+        <div class="product-list">
+          <div class="product-item">
+            <div class="product-info">
+              <div class="product-icon">📱</div>
+              <div>
+                <div class="product-name">iPhone 16 Pro</div>
+                <div class="product-cat">جوالات</div>
+              </div>
+            </div>
+            <div class="product-price">180 ش/شهر</div>
+          </div>
+          <div class="product-item">
+            <div class="product-info">
+              <div class="product-icon">💻</div>
+              <div>
+                <div class="product-name">MacBook Air M3</div>
+                <div class="product-cat">لابتوبات</div>
+              </div>
+            </div>
+            <div class="product-price">220 ش/شهر</div>
+          </div>
+          <div class="product-item">
+            <div class="product-info">
+              <div class="product-icon">🎮</div>
+              <div>
+                <div class="product-name">PlayStation 5</div>
+                <div class="product-cat">جيمينج</div>
+              </div>
+            </div>
+            <div class="product-price">95 ش/شهر</div>
+          </div>
+        </div>
+        <p class="monthly-note">جميع الأسعار بالشيقل • <span>بدون دفعة أولى</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-scroll" id="trustScroll">
+    <div class="trust-item"><span>✦</span> بدون دفعة أولى</div>
+    <div class="trust-item"><span>✦</span> بدون كفيل</div>
+    <div class="trust-item"><span>✦</span> موافقة خلال 24 ساعة</div>
+    <div class="trust-item"><span>✦</span> أقساط تصل لـ 36 شهر</div>
+    <div class="trust-item"><span>✦</span> توصيل لباب البيت</div>
+    <div class="trust-item"><span>✦</span> منتجات أصلية 100%</div>
+    <div class="trust-item"><span>✦</span> دعم 24/7</div>
+    <!-- duplicate for loop -->
+    <div class="trust-item"><span>✦</span> بدون دفعة أولى</div>
+    <div class="trust-item"><span>✦</span> بدون كفيل</div>
+    <div class="trust-item"><span>✦</span> موافقة خلال 24 ساعة</div>
+    <div class="trust-item"><span>✦</span> أقساط تصل لـ 36 شهر</div>
+    <div class="trust-item"><span>✦</span> توصيل لباب البيت</div>
+    <div class="trust-item"><span>✦</span> منتجات أصلية 100%</div>
+    <div class="trust-item"><span>✦</span> دعم 24/7</div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-header reveal">
+      <div class="section-tag">لماذا تقسيط+؟</div>
+      <h2 class="section-title">مميزات تجعلنا الخيار الأول</h2>
+      <p class="section-sub">صمّمنا خدمتنا لتكون أسهل وأسرع تجربة تقسيط تمر بها</p>
+    </div>
+    <div class="features-grid">
+      <div class="feat-card reveal">
+        <div class="feat-icon">💳</div>
+        <div class="feat-title">بدون دفعة أولى</div>
+        <p class="feat-desc">استلم منتجك اليوم وابدأ الدفع الشهر الجاي. صفر ريال مقدّم.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon">🚫</div>
+        <div class="feat-title">بدون كفيل</div>
+        <p class="feat-desc">لا نطلب منك ضامن أو كفيل. نثق فيك مباشرة ونخدمك.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon">⚡</div>
+        <div class="feat-title">موافقة سريعة</div>
+        <p class="feat-desc">قرارك في أقل من 24 ساعة. ما تنتظر وما تتعنى بالأوراق.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon">📦</div>
+        <div class="feat-title">توصيل لبابك</div>
+        <p class="feat-desc">نوصل لك جهازك لباب البيت أينما كنت. راحتك أولويتنا.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon">🛡️</div>
+        <div class="feat-title">منتجات أصلية</div>
+        <p class="feat-desc">جميع منتجاتنا أصلية 100% بكرتون المصنع وضمان كامل.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon">🗓️</div>
+        <div class="feat-title">أقساط مرنة</div>
+        <p class="feat-desc">اختر من 6 أشهر حتى 36 شهر. خطة تناسب راتبك وميزانيتك.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="steps" id="steps">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-header reveal" style="text-align:center;">
+      <div class="section-tag">الخطوات</div>
+      <h2 class="section-title">كيف تحصل على جهازك؟</h2>
+      <p class="section-sub" style="margin:0 auto 3rem;">أربع خطوات بسيطة وجهازك بيدك</p>
+    </div>
+    <div class="steps-container">
+      <div class="steps-line"></div>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-num">1</div>
+          <div class="step-title">اختر منتجك</div>
+          <p class="step-desc">تصفح كتالوجنا واختر الجهاز اللي يناسبك</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">2</div>
+          <div class="step-title">قدّم طلبك</div>
+          <p class="step-desc">امل نموذج الطلب البسيط في دقيقتين</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">3</div>
+          <div class="step-title">انتظر الموافقة</div>
+          <p class="step-desc">فريقنا يراجع طلبك ويتواصل معك خلال 24 ساعة</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">4</div>
+          <div class="step-title">استلم جهازك</div>
+          <p class="step-desc">نوصل لك الجهاز لبابك وتبدأ التقسيط</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-header reveal">
+      <div class="section-tag">المنتجات</div>
+      <h2 class="section-title">قسّط اللي تحتاجه</h2>
+      <p class="section-sub">تشكيلة واسعة من أفضل الأجهزة والتقنيات</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card reveal">
+        <span class="p-icon">📱</span>
+        <div class="p-name">جوالات ذكية</div>
+        <p class="p-desc">آيفون، سامسونج، هواوي وأكثر</p>
+        <span class="p-installment">من 60 ش/شهر</span>
+      </div>
+      <div class="product-card reveal">
+        <span class="p-icon">💻</span>
+        <div class="p-name">لابتوبات</div>
+        <p class="p-desc">ماك، ديل، لينوفو، HP وأكثر</p>
+        <span class="p-installment">من 120 ش/شهر</span>
+      </div>
+      <div class="product-card reveal">
+        <span class="p-icon">🎮</span>
+        <div class="p-name">جيمينج</div>
+        <p class="p-desc">PS5، Xbox، Nintendo Switch</p>
+        <span class="p-installment">من 80 ش/شهر</span>
+      </div>
+      <div class="product-card reveal">
+        <span class="p-icon">⌚</span>
+        <div class="p-name">ساعات ذكية</div>
+        <p class="p-desc">Apple Watch، Samsung Galaxy Watch</p>
+        <span class="p-installment">من 40 ش/شهر</span>
+      </div>
+      <div class="product-card reveal">
+        <span class="p-icon">📸</span>
+        <div class="p-name">كاميرات</div>
+        <p class="p-desc">Canon، Sony، Nikon ومزيد</p>
+        <span class="p-installment">من 90 ش/شهر</span>
+      </div>
+      <div class="product-card reveal">
+        <span class="p-icon">🎧</span>
+        <div class="p-name">سماعات وصوتيات</div>
+        <p class="p-desc">AirPods، Sony WH، Bose</p>
+        <span class="p-installment">من 25 ش/شهر</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONDITIONS -->
+<section class="conditions" id="conditions">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-header reveal" style="text-align:center;">
+      <div class="section-tag">الشروط</div>
+      <h2 class="section-title">شروطنا بسيطة ومقدور عليها</h2>
+      <p class="section-sub" style="margin:0 auto 3rem;">ثلاثة شروط فقط وجهازك بيدك</p>
+    </div>
+    <div class="cond-grid">
+      <div class="cond-card reveal">
+        <span class="cond-icon">💼</span>
+        <div class="cond-title">على رأس العمل</div>
+        <p class="cond-desc">موظف حكومي، أو قطاع خاص، أو عسكري</p>
+      </div>
+      <div class="cond-card reveal">
+        <span class="cond-icon">🪪</span>
+        <div class="cond-title">هوية سارية</div>
+        <p class="cond-desc">هوية وطنية أو إقامة سارية المفعول</p>
+      </div>
+      <div class="cond-card reveal">
+        <span class="cond-icon">🎂</span>
+        <div class="cond-title">عمرك +21</div>
+        <p class="cond-desc">يكون عمرك 21 سنة أو أكثر</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section" id="form">
+  <div class="form-wrapper">
+    <div class="form-card reveal">
+      <h2 class="form-title">قدّم طلبك الآن 🚀</h2>
+      <p class="form-sub">امل البيانات وفريقنا يتواصل معك خلال 24 ساعة</p>
+      <form id="requestForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>الاسم الكامل *</label>
+            <input type="text" name="name" placeholder="أدخل اسمك الكامل" required>
+          </div>
+          <div class="form-group">
+            <label>رقم الهاتف *</label>
+            <input type="tel" name="phone" placeholder="05xxxxxxxx" required>
+          </div>
+          <div class="form-group">
+            <label>البريد الإلكتروني</label>
+            <input type="email" name="email" placeholder="example@email.com">
+          </div>
+          <div class="form-group">
+            <label>جهة العمل *</label>
+            <select name="employer" required>
+              <option value="">اختر جهة العمل</option>
+              <option>موظف حكومي</option>
+              <option>قطاع خاص</option>
+              <option>عسكري / شرطة</option>
+              <option>أعمال حرة</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>المنتج المطلوب *</label>
+            <select name="product" required>
+              <option value="">اختر المنتج</option>
+              <option>جوال ذكي</option>
+              <option>لابتوب</option>
+              <option>جيمينج</option>
+              <option>ساعة ذكية</option>
+              <option>كاميرا</option>
+              <option>سماعات</option>
+              <option>أخرى</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>مدة التقسيط</label>
+            <select name="duration">
+              <option>6 أشهر</option>
+              <option>12 شهراً</option>
+              <option>18 شهراً</option>
+              <option selected>24 شهراً</option>
+              <option>36 شهراً</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label>تفاصيل المنتج أو ملاحظات</label>
+            <textarea name="notes" placeholder="مثلاً: iPhone 16 Pro Max 256GB لون أسود..."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">
+          إرسال الطلب ✨
+        </button>
+        <p class="form-note">بالضغط على إرسال توافق على <a href="#">شروط الخدمة</a> و<a href="#">سياسة الخصوصية</a></p>
+      </form>
+      <div id="success-msg">
+        ✅ تم إرسال طلبك بنجاح! سيتواصل معك فريقنا خلال 24 ساعة.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-header reveal" style="text-align:center;">
+      <div class="section-tag">الأسئلة الشائعة</div>
+      <h2 class="section-title">أسئلة يسألها الناس كثيراً</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-q">هل فعلاً بدون دفعة أولى؟ <span class="arrow">▼</span></div>
+        <div class="faq-a">نعم، لا نطلب أي دفعة مقدّمة. تستلم جهازك اليوم وتبدأ السداد الشهر القادم.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">كم يستغرق وقت الموافقة؟ <span class="arrow">▼</span></div>
+        <div class="faq-a">في الغالب نراجع طلبك ونرد عليك خلال 24 ساعة من تقديمه.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">هل المنتجات أصلية؟ <span class="arrow">▼</span></div>
+        <div class="faq-a">بالتأكيد، جميع منتجاتنا أصلية 100% مع ضمان المصنع الكامل.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">ما هي أقل وأعلى قيمة للتقسيط؟ <span class="arrow">▼</span></div>
+        <div class="faq-a">نقدّم تقسيطاً يبدأ من 500 شيقل وحتى 8000 شيقل حسب أهليتك وجهة عملك.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">كيف يتم التوصيل؟ <span class="arrow">▼</span></div>
+        <div class="faq-a">نوصل مباشرة لعنوانك أينما كنت، عبر شركات شحن موثوقة وبسرعة.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>جاهز تاخذ جهازك اليوم؟ 🎉</h2>
+  <p>انضم لآلاف العملاء اللي يقسّطون معنا بسهولة وراحة</p>
+  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+    <a href="#form" class="btn-primary">قدّم طلبك الآن</a>
+    <a href="https://wa.me/970500000000" target="_blank" class="btn-whatsapp">تواصل واتساب</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 تقسيط+ | جميع الحقوق محفوظة</p>
+  <p style="margin-top:0.4rem;">
+    <a href="#">سياسة الخصوصية</a> • 
+    <a href="#">شروط الاستخدام</a> • 
+    <a href="mailto:info@taqseet.ps">info@taqseet.ps</a>
+  </p>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa-float" href="https://wa.me/970500000000?text=أريد الاستفسار عن خدمة التقسيط" target="_blank">
+  <div class="wa-tooltip">تواصل معنا الآن</div>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.108.549 4.088 1.51 5.808L0 24l6.335-1.648A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.6a9.6 9.6 0 01-4.889-1.337l-.351-.209-3.624.942.974-3.532-.228-.363A9.567 9.567 0 012.4 12c0-5.292 4.308-9.6 9.6-9.6 5.292 0 9.6 4.308 9.6 9.6 0 5.292-4.308 9.6-9.6 9.6z"/>
+  </svg>
+</a>
+
+<script src="tq.js"></script>
+</body>
+</html>
